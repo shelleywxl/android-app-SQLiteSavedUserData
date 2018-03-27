@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.sqlitesaveduserdata.MainActivity">
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:text="Name"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/name_et"
+        android:layout_toRightOf="@+id/name_tv"
+        android:layout_alignBottom="@+id/name_tv"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/email_tv"
+        android:text="Email"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_tv"
+        android:layout_below="@+id/name_tv"/>
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_toRightOf="@+id/email_tv"
+        android:layout_alignBottom="@+id/email_tv"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/show_tv"
+        android:text="Favorite TV Show"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_tv"
+        android:layout_below="@+id/email_tv"/>
+
+    <EditText
+        android:id="@+id/show_et"
+        android:layout_toRightOf="@+id/show_tv"
+        android:layout_alignBottom="@+id/show_tv"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:text="ADD DATA"
+        android:layout_below="@+id/show_tv"
+        android:layout_marginLeft="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/view_btn"
+        android:text="VIEW DATA"
+        android:layout_toRightOf="@+id/add_btn"
+        android:layout_alignTop="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/update_btn"
+        android:text="UPDATE DATA"
+        android:layout_toRightOf="@+id/view_btn"
+        android:layout_alignTop="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/id_tv"
+        android:text="ID"
+        android:textSize="20sp"
+        android:layout_below="@+id/add_btn"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/id_et"
+        android:hint="Use to Update or Delete"
+        android:layout_below="@+id/add_btn"
+        android:layout_toRightOf="@+id/id_tv"
+        android:layout_alignRight="@+id/update_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/delete_btn"
+        android:text="DELETE"
+        android:layout_alignRight="@+id/id_et"
+        android:layout_below="@+id/id_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
